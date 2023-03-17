@@ -1,0 +1,38 @@
+.btn {
+  &__btnLeft {
+    width: 128px;
+    height: 62px;
+    border: 0px;
+    background: $clr-col1;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    cursor: pointer;
+    z-index: 2;
+
+    img {
+      width: 18px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+
+  &__btnRight {
+    width: 128px;
+    height: 62px;
+    border: 0px;
+    background: $clr-col1;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    cursor: pointer;
+    z-index: 2;
+
+    img {
+      width: 18px;
+      height: 30px;
+      object-fit: cover;
+      transform: rotate(180deg);
+    }
+  }
+}

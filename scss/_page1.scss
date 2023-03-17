@@ -1,0 +1,25 @@
+.page1 {
+  background-image: url(../assets/tlo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $clr-light;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 5%;
+  }
+
+  &__lead {
+    width: 50%;
+  }
+
+  &__slider {
+    & img {
+      width: 100%;
+    }
+  }
+}

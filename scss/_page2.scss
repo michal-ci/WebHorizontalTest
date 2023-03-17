@@ -1,0 +1,45 @@
+.page2 {
+  background-color: #ede8e8;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  z-index: 0;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10%;
+  }
+
+  &__lead,
+  &__title {
+    width: 50%;
+  }
+
+  &__img {
+    width: 40%;
+    height: 108%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.page2:before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  border: 15px solid $clr-col1;
+  z-index: 2;
+}
