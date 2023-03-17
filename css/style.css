@@ -27,6 +27,7 @@ main {
   overflow-x: hidden;
   overflow: hidden;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 .scroll {
