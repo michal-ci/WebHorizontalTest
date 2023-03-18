@@ -33,7 +33,7 @@ $size: 3;
   &__gallery {
     position: relative;
     display: grid;
-    height: calc(100vh - 10px);
+    height: calc(50vh - 10px);
     grid-template: repeat(2, 1fr) / repeat(6, 1fr);
     grid-gap: 0.5em;
   }

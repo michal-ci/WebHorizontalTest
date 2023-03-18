@@ -29,4 +29,35 @@
     flex-direction: column;
     width: 60%;
   }
+
+  &__columnTwo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__gallery {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__thumbnail {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: -45px;
+  }
+
+  /* Stylizacja aktywnej miniaturki */
+  .active {
+    // border-top: 5px solid $clr-col1;
+  }
 }

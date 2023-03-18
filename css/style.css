@@ -193,7 +193,7 @@ main {
 .page2:before {
   content: "";
   width: 80%;
-  height: 80%;
+  height: 70%;
   position: absolute;
   border: 15px solid #ffcc00;
   z-index: 2;
@@ -244,7 +244,7 @@ main {
 .page3__gallery {
   position: relative;
   display: grid;
-  height: calc(100vh - 10px);
+  height: calc(50vh - 10px);
   grid-template: repeat(2, 1fr)/repeat(6, 1fr);
   grid-gap: 0.5em;
 }
@@ -291,6 +291,7 @@ main {
           justify-content: center;
   position: relative;
   background-color: #ede8e8;
+  /* Stylizacja aktywnej miniaturki */
 }
 .page4 img {
   width: 100%;
@@ -330,7 +331,39 @@ main {
           flex-direction: column;
   width: 60%;
 }
-
+.page4__columnTwo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page4__gallery {
+  width: 350px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page4__gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page4__thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: -45px;
+}
 .page5 {
   background-color: #ede8e8;
   display: -webkit-box;
