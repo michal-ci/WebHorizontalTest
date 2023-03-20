@@ -14,8 +14,6 @@ main {
   position: relative;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
-  // scroll-behavior: smooth;
-  // scroll-snap-align: start;
 }
 
 .scroll {
@@ -48,11 +46,17 @@ main {
 }
 
 .footer {
-  color: #fff;
+  color: $clr-light;
   position: fixed;
   bottom: 0px;
   right: 0px;
-  background: black;
+  background: $clr-dark;
   padding: 20px;
   font-size: $font-size-xs;
+}
+
+.sgnature {
+  font-size: $font-size-xs;
+  color: $clr-col4;
+  padding: 3px 0;
 }
