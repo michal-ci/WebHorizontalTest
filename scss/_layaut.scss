@@ -8,6 +8,11 @@ body {
     height: auto;
     overflow: auto;
   }
+
+  @include tablet {
+    height: auto;
+    overflow: auto;
+  }
 }
 
 main {
@@ -72,6 +77,7 @@ main {
   background: $clr-dark;
   padding: 20px;
   font-size: $font-size-xs;
+  z-index: 100;
 }
 
 .sgnature {
