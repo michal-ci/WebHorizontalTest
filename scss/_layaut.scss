@@ -85,3 +85,10 @@ main {
   color: $clr-col4;
   padding: 3px 0;
 }
+
+.btn__btnRight,
+.btn__btnLeft {
+  @include mobile {
+    display: none;
+  }
+}

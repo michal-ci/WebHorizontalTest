@@ -4,6 +4,12 @@
   background-size: cover;
   color: $clr-light;
 
+  @include mobile {
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+
   &__wrapper {
     height: 100vh;
     display: flex;
