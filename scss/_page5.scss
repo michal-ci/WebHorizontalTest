@@ -21,19 +21,36 @@
     object-fit: cover;
   }
 
+  &__videoBox {
+    height: 320px;
+
+    @include tablet {
+      height: 200px;
+    }
+  }
+
   &__column {
     display: flex;
     gap: 20px;
     z-index: 1;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__imgBox {
-    height: 350px;
-  }
+    height: 300px;
+    margin-bottom: 10px;
 
-  &__imgBox {
     .sgnature {
       text-align: right !important;
+      margin-bottom: 5px;
+    }
+
+    @include tablet {
+      width: 320px;
+      height: 200px;
     }
   }
 
@@ -43,12 +60,20 @@
     flex-direction: column;
     width: 50%;
     gap: 20px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__col2 & {
     &__lead {
       margin-left: 65px !important;
       color: #fff;
+
+      @include tablet {
+        margin-left: 0px !important;
+      }
     }
   }
 
@@ -65,4 +90,10 @@
   background: $clr-dark;
   z-index: 0;
   right: 0;
+
+  @include tablet {
+    bottom: 0px;
+    width: 100%;
+    height: 50vh;
+  }
 }
