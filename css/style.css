@@ -219,7 +219,6 @@ main {
   }
 }
 .page1__slider {
-  background: rgba(255, 0, 0, 0.1411764706);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +228,14 @@ main {
 }
 .page1 .glide {
   width: 100%;
+}
+.page1 .glide__arrow {
+  background-color: #ffb335;
+  color: #000;
+  width: 32px;
+  height: 32px;
+  border: 0px;
+  margin-top: 10px;
 }
 .page1 .slide__wrapper {
   display: -webkit-box;
