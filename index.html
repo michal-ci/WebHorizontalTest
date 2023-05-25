@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scroll_horizontal_test</title>
   <link rel="stylesheet" href="css/style.css" />
+
   <script>
     window.addEventListener('resize', function() {
   if (window.innerWidth !== document.documentElement.clientWidth) {
@@ -14,6 +15,7 @@
   }
 });
   </script>
+
 
 </head>
 
@@ -47,7 +49,59 @@
           anim id est laborum.
         </div>
         <div class="page1__slider">
-          <img src="./assets/slider.png" alt="foto" />
+          <!-- <img src="./assets/slider.png" alt="foto" /> -->
+
+
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="slide__wrapper">
+                    <img class="slide__img" src="./assets/img_slider/graf-slaid-1.jpg" alt="#foto_slider1">
+                      <div class="slide__content">
+                      <img class="slide__logo" src="./assets/logotypy/logo1.png" alt="#foto_slider1">
+                      <p class="slide__lead">Nietypowe domy - domy na kółkach, na drzewach, na wodzie,</p>
+                      <a class="slide__btn" href="#">czytaj wiecej</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="slide__wrapper">
+                    <img class="slide__img" src="./assets/img_slider/graf-slaid-2.jpg" alt="#foto_slider1">
+                      <div class="slide__content">
+                      <img class="slide__logo" src="./assets/logotypy/logo1.png" alt="#foto_slider1">
+                      <p class="slide__lead">Nietypowe domy - domy na kółkach, na drzewach, na wodzie,</p>
+                      <a class="slide__btn" href="#">czytaj wiecej</a>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="slide__wrapper">
+                    <img class="slide__img" src="./assets/img_slider/graf-slaid-3.jpg" alt="#foto_slider1">
+                      <div class="slide__content">
+                      <img class="slide__logo" src="./assets/logotypy/logo1.png" alt="#foto_slider1">
+                      <p class="slide__lead">Nietypowe domy - domy na kółkach, na drzewach, na wodzie,</p>
+                      <a class="slide__btn" href="#">czytaj wiecej</a>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="slide__wrapper">
+                    <img class="slide__img" src="./assets/img_slider/graf-slaid-4.jpg" alt="#foto_slider1">
+                      <div class="slide__content">
+                      <img class="slide__logo" src="./assets/logotypy/logo1.png" alt="#foto_slider1">
+                      <p class="slide__lead">Nietypowe domy - domy na kółkach, na drzewach, na wodzie,</p>
+                      <a class="slide__btn" href="#">czytaj wiecej</a>
+                    </div>
+                </li>
+              </ul>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -326,8 +380,10 @@ links.forEach(link => {
   });
 });
 
-  </script>
 
+
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
 
 </html>

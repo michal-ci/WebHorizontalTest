@@ -12,6 +12,7 @@
 
   &__wrapper {
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,8 +28,50 @@
   }
 
   &__slider {
-    & img {
-      width: 100%;
+    background: #ff000024;
+
+    display: flex;
+    align-items: center;
+  }
+  .glide {
+    width: 100%;
+  }
+
+  .slide {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      width: 350px;
+      position: relative;
+    }
+
+    &__content {
+      position: absolute;
+      background-color: #05050594;
+      bottom: 0px;
+      font-size: 1em;
+      height: 97px;
+      padding: 5px 20px;
+    }
+
+    &__logo {
+      height: auto;
+      width: 83px;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      width: 105px;
+      color: #000;
+      text-decoration: none;
+      font-size: 12px;
+      background-color: $clr-col3;
+      padding: 5px 9px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
     }
   }
 }
